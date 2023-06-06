@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/Web%20development/second.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        .Container {
+
+            display: flex;
+            font-family: 'Pacifico';
+
+            width: 100vw;
+            background-color: blue;
+            transition-property: background-color;
+            transition-duration: 2s;
+            box-shadow: 0px 0.31rem 1.3125rem 0.375rem black;
+
+            z-index: +3;
+        }
+
+        .para {
+
+            display: flex;
+
+            margin: 0%;
+            /*justify-content: center;*/
+
+            padding: 2rem 4.375rem;
+
+
+            width: 6.875rem;
+            font-size: 1.5rem;
+            border-color: aqua;
+
+
+            transition-property: all;
+            transition-duration: 1.2s;
+
+
+        }
+
+        #imge {
+            position: relative;
+            margin: 0%;
+            padding: 1.3125rem 4.375rem;
+            background-image: url('img/th.jpg');
+
+            background-size: 100%;
+            background-position: center center;
+
+        }
+
+
+        #an {
+            justify-content: center;
+            background-color: brown;
+        }
+
+        .para:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .third {
+            z-index: -1;
+            display: grid;
+            grid-template-areas:
+                'left right'
+
+                'footer footer';
+            height: 88.3vh;
+        }
+
+        .hello {
+            background-image: url('img/macarons-gdaecd1d45_1280.jpg');
+            grid-area: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 70vw;
+            opacity: 0.8;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 4.2rem;
+            animation: change 20s infinite ease-in-out;
+            animation-delay: 3s;
+
+        }
+
+        .hello2 {
+            /*background-color: blue;*/
+            background-image: url('img/Old\ page\ 1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            width: 30vw;
+            box-shadow: 0.3125rem 0.3125rem 1.1875rem 0.375rem black;
+            z-index: +2;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 0.0625rem;
+            border: 2px solid black;
+            margin: 0.6875rem auto;
+            font-size: 1.3rem;
+            border-radius: 0.5rem;
+        }
+
+        .containers {
+
+            /*background-color: brown;*/
+            background-image: url('img/Old\ page\ 2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            margin: 3.6875rem 2.875rem;
+            padding: 4.6875rem;
+
+            width: 100%;
+            border-radius: 1.75rem;
+        }
+
+        .containers button {
+            display: block;
+            width: 74%;
+            margin: 0.769rem auto;
+            height: 10%;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            body{
+                background-color: blueviolet;
+            }
+            .para {
+
+                display: flex;
+
+                margin: 0%;
+                /*justify-content: center;*/
+
+                padding: 3rem 4.375rem;
+
+
+                width: 6.875rem;
+                font-size: 1.5rem;
+                border-color: aqua;
+
+
+                transition-property: all;
+                transition-duration: 1.2s;
+
+
+            }
+
+            .third {
+                display: grid;
+                grid-template-areas:
+                    'left left'
+                    'right right'
+                    'footer footer';
+            }
+
+            .hello {
+                display: flex;
+                width: 1200px;
+                height: 100vh;
+                background-image: url('img/macarons-gdaecd1d45_1280.jpg');
+                grid-area: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                opacity: 0.8;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 4.2rem;
+                animation: change2 20s infinite ease-in-out;
+                animation-delay: 3s;
+
+            }
+
+            .hello2 {
+                width: 1200px;
+                z-index: 3;
+            }
+
+            .footer {
+                
+                width: 1200px;
+                height: 50vh;
+            }
+
+            .Container {
+                width: 1200px;
+            }
+
+            .form-group input {
+                font-family: 'Baloo Bhai', cursive;
+                text-align: center;
+                display: block;
+                width: 60%;
+                padding: 0.0625rem;
+                border: 2px solid black;
+                margin: 0.6875rem auto;
+                font-size: 1.3rem;
+                border-radius: 0.5rem;
+            }
+
+            .containers {
+
+                /*background-color: brown;*/
+                background-image: url('img/Old\ page\ 2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                margin: 3.6875rem 2.875rem;
+                padding: 4.6875rem;
+
+                width: 50%;
+                border-radius: 1.75rem;
+            }
+
+            .containers button {
+                display: block;
+                width: 40%;
+                margin: 0.769rem auto;
+                height: 10%;
+            }
+
+
+        }
+
+
+        @keyframes change {
+            23% {
+                background-image: url('img/cheesecake-gd988fb85e_1280.jpg');
+            }
+
+            46% {
+                background-image: url('img/macarons-gdaecd1d45_1280.jpg');
+            }
+
+            69% {
+                background-image: url('img/muffin-g7871242f1_1280.jpg');
+            }
+
+            85% {
+                background-image: url('img/pexels-arminas-raudys-808923.jpg');
+            }
+
+        }
+
+        @keyframes change2 {
+            23% {
+                background-image: url('img/cheesecake-gd988fb85e_1280.jpg');
+            }
+
+            46% {
+                background-image: url('img/macarons-gdaecd1d45_1280.jpg');
+            }
+
+            69% {
+                background-image: url('img/muffin-g7871242f1_1280.jpg');
+            }
+
+            85% {
+                background-image: url('img/pexels-arminas-raudys-808923.jpg');
+            }
+
+        }
+
+
+        .itachi {
+            color: black;
+            opacity: 1.0;
+        }
+
+        .footer {
+            background-color: blueviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 5rem;
+            grid-area: footer;
+            height: 30vh;
+
+        }
+
+
+
+
+        .containers h1 {
+            text-align: center;
+        }
+
+
+
+        button:hover {
+            cursor: pointer;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="para" id="an">PARADISE</div>
+        <div class="para" id="imge"></div>
+        <div class="para" id="home">Home</div>
+        <div class="para">Recipes</div>
+        <div class="para">Cuisines</div>
+
+    </div>
+    <div class="third">
+        <div class="hello">
+            <div class="itachi">
+                Welcome to a place, where you can explore the world of delight and yummyness.</div>
+        </div>
+        <div class="hello2">
+            <div class="containers">
+                <h1>Sign up with Paradise</h1>
+                <form action="http://127.0.0.1:5500/Web%20development/noaction.php">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Age">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your City">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Email Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Password">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">This is footer</div>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
